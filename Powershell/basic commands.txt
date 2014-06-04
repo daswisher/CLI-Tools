@@ -1,0 +1,25 @@
+There are a number of different commands used in powershell that are similar to bash.
+The first set are get commands:
+get-service <<This returns all services active and inactive
+get-process <<This returns only running process along with process info
+
+	Ex: get-process waterfox <<Returns info like pid, usage, etc
+stop-process <<Used to kill process, but you have to use pid instead of process name
+start-process <<Starts a process, but you use process name instead of pid
+
+
+
+Navigation commands are a hybrid of bash and cmd:
+ls <<list directory contents
+dir <<is the same thing as ls
+cd << change directory
+	cd .. << goes back one level
+	cd / <<goes to root directory
+<tab key> << auto complete
+
+
+There are also a series of commands that are similar to bash commands for creation and deletion:
+mkdir <<makes a directory
+rmdir <<deletes a directory
+echo $null > <file name> <<same as the touch command to make empty files
+<<<<<rm on a directory that has children will prompt for recursive delete>>>>>
