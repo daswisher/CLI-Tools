@@ -1,7 +1,44 @@
-/* Vim is a text editor that makes life extremely easy when using bash. It's useful for viewing and editing files through a text based system. It can alse be used to check media files for embeded executables that may potentially be harmful to the user or their system*/
+/* Vim is a command line interface (cli) text editor that makes life extremely easy when using bash. It's useful for viewing and editing files through a text based system. It can alse be used to check media files for embeded material that may potentially be harmful to the user or their system*/
 
 Vim is started by the following command:
 
 	vim <file name>
 
 The interface is pretty simple as long as you know the most common commands.
+
+To begin editing, the most simple command to begin is to move the cursor to where you want to begin typing and hit the "i" key. Once that key is hit, it'll begin typing at the cursor's location. 
+
+To get out of the editing mode, hit the "esc" key to return to viewer mode. 
+
+To select text, move the cursor to where you want to begin highlighting, and hit the "v" key. After hitting that key, use the arrow keys to begin selecting text. After a selection has been made, there are three different useful keystrokes that can be used for cut ("d"), paste ("p"), and copy ("y").
+
+Exiting the Vim editor is rather simple. After [Esc]aping the edit mode, the file can either be saved (":w"), exited without saving (":q!"), or saved and exited (":wq").
+
+In short, the Vim editor is a quick and easy to use tool that can be used from a command line interface.
+
+Here's a list of common commands:
+
+	"i" <<< insert at cursor location
+	"a" <<< insert after cursor location
+	"I" <<< insert at start of current line
+	"A" <<< insert at end of current line
+	"o" <<< insert line below current line
+	"O" <<< insert line above current line
+	"s" <<< delete character below cursor and insert
+	"S" <<< delete entire line and begin inserting on that line
+	"cw" << delete to end of current word and start inserting after
+	"cc" << same as "S"
+	"C" <<< delete from cursor to the end of line and begin inserting at cursor location
+
+	"v" <<< visual selection beginning at cursor location
+	"d" <<< cut selection
+	"y" <<< copy selection
+	"p" <<< paste selection after cursor
+	"P" <<< paste selection before cursor
+	"ctrl+v" <<< copy block of text
+
+	"esc" <<< escape to view mode
+	":w" <<< save without exiting
+	":q" <<< quit 
+	":q!" <<< force quit
+	":wq" <<< save and quit
