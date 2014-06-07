@@ -1,0 +1,7 @@
+/* Vim is a text editor that makes life extremely easy when using bash. It's useful for viewing and editing files through a text based system. It can alse be used to check media files for embeded executables that may potentially be harmful to the user or their system*/
+
+Vim is started by the following command:
+
+	vim <file name>
+
+The interface is pretty simple as long as you know the most common commands.
