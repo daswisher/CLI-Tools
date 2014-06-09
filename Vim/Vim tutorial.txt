@@ -39,6 +39,10 @@ Here's a list of common commands:
 
 	"esc" <<< escape to view mode
 	":w" <<< save without exiting
+	":w <file name with file extension>" <<< save file as
+	":w! <file name with file extension>" <<< overwrite current filename
+to new filename
+	":r <file name with file extension>" <<< read data from indicated file
 	":q" <<< quit 
 	":q!" <<< force quit
 	":wq" <<< save and quit
