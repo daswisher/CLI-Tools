@@ -1,0 +1,7 @@
+Nano is another text editor similar to vim. It is very simple and all of 
+the commands are displayed on a bar at the bottom. In order to install 
+Nano on windows, visit www.nano-editor.org. There will be a file 
+download that includes the dll files as well as the nano exectuable 
+file. Extract the dll and exe to the windows directory (C:/Windows). As 
+soon as that's done, nano can be called within cmd or powershell by 
+typing "nano."
