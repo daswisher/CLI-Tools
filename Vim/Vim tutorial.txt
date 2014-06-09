@@ -1,8 +1,18 @@
+>>>>>Preface<<<<<
+
 /* Vim is a command line interface (cli) text editor that makes life extremely easy when using bash. It's useful for viewing and editing files through a text based system. It can alse be used to check media files for embeded material that may potentially be harmful to the user or their system*/
+
+>>>>>Setup<<<<<
+
+Vim installers can be found online at www.vim.org/download.php. Some operating systems do come installed with vim (like Ubuntu) while others (like Microsoft Windows) do not.
+
+>>>>>>Usage<<<<<
 
 Vim is started by the following command:
 
 	vim <file name>
+
+>>>>>Interface<<<<<
 
 The interface is pretty simple as long as you know the most common commands.
 
