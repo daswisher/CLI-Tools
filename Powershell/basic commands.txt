@@ -16,7 +16,21 @@ cd << change directory
 	cd .. << goes back one level
 	cd / <<goes to root directory
 <tab key> << auto complete
+***In order to deal with files that have a spaces in their name, use a typeset apostrophe instead of a tick 
+mark***
 
+For instance, we need to navigate into a directory that has a space in the name "my documents", we would use the 
+following command:
+cd my` documents
+
+Alternatively, in order to deal with spaces, it is possible to wrap the entire name in quotes to treat it as a 
+string. The entire path would have to be wrapped and not just the folder. 
+
+Example: We want to create a directory called "my stuff"
+mkdir "my stuff"
+
+Example 2: There is the folder "my documents" within the folder "stuff"
+cd ".\stuff\my documents"
 
 There are also a series of commands that are similar to bash commands for creation and deletion:
 mkdir <<makes a directory
