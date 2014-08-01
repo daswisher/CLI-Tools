@@ -1,13 +1,20 @@
+>>>Process management on computer
+
 There are a number of different commands used in powershell that are similar to bash.
 The first set are get commands:
 get-service <<This returns all services active and inactive
 get-process <<This returns only running process along with process info
 
-	Ex: get-process waterfox <<Returns info like pid, usage, etc
+Ex: get-process waterfox <<Returns info like pid, usage, etc
 stop-process <<Used to kill process, but you have to use pid instead of process name
+kill <<This is the same as stop-process/service
+***If you want to kill a process using the name instead of the PID, add -process name in between the command and the process name***
+Ex: we want to kill notepad, we'd use the following
+kill -processname notepad
 start-process <<Starts a process, but you use process name instead of pid
 
 
+>>>System navigation
 
 Navigation commands are a hybrid of bash and cmd:
 ls <<list directory contents
@@ -31,6 +38,9 @@ mkdir "my stuff"
 
 Example 2: There is the folder "my documents" within the folder "stuff"
 cd ".\stuff\my documents"
+
+
+>>>Creation and deletion
 
 There are also a series of commands that are similar to bash commands for creation and deletion:
 mkdir <<makes a directory
