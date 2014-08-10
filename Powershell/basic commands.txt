@@ -76,3 +76,6 @@ manage-bde -lock <drive>:
 Example: manage-bde -lock C: <<<This would lock the C drive provided that it was a drive encrypted by BitLocker
 
 Unlocking a Volume:
+manage-bde -unlock <drive>: -password <<<This can only be done from an admin privilage and will prompt the user for the password after execution
+Example: manage-bde -lock C: -password
+thisIsAPassword
