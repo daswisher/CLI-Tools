@@ -11,7 +11,6 @@ Restart computer:
 restart-computer
 
 
-
 >>>Process management on computer
 
 There are a number of different commands used in powershell that are similar to bash.
@@ -61,3 +60,19 @@ mkdir <<makes a directory
 rmdir <<deletes a directory
 echo $null > <file name> <<same as the touch command to make empty files
 <<<<<rm on a directory that has children will prompt for recursive delete>>>>>
+
+
+>>>Escalating user privilages 
+By default, powershell runs as a non-administer profile to add a mild level of protection for the system from the user. Although, it is commonly needed to have admin privilages to do things like installations or unlock/lock encrypted drives. In order to open a new terminal window with admin privilages, type the following command:
+start-process powershell -verb runAs
+
+
+
+>>>BitLocker Management
+Windows comes with a drive encryption application called BitLocker. While it works well on drives/volumes (spanned volumes included), it does have some issues like the fact that it isn't possible to relock drives from the gui. There are a few commands that make using a cli to manage bitlocker over gui's though.
+
+Locking a Volume:
+manage-bde -lock <drive>:
+Example: manage-bde -lock C: <<<This would lock the C drive provided that it was a drive encrypted by BitLocker
+
+Unlocking a Volume:
