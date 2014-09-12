@@ -1,0 +1,65 @@
+FFMPEG is a tool that can be used to work with video files. Some of the usage cases might be for video stabilization, file conversion, frame rotation, frame scaling, etc. This guide is based upon usage in windows, but the execution of commands should be the same across linux and mac if installed properly.
+
+Installation on Windows:
+1. Download ffmpeg from https://www.ffmpeg.org/download.html
+2. Create a folder in the root directory of the drive (usually C:\)
+3. Name the new folder ffmpeg
+4. Extract the contents from the download into the new folder
+	It should be all the files, not the folder that stores the files
+5. Access advanced system settings from control panel>system and security>system6. On the advanced tab, click the environment variables button
+7. Edit the Path variable, and add the following at the end of the line
+	C:\ffmpeg\bin
+
+
+
+
+Here are some of the commands that can be used to do these operations.
+
+
+
+
+
+
+Stabilization (deshaking):
+
+ffmpeg -i input.extension -vf deshake output.extension
+
+/*
+	-i input.extension designates the file to convert
+	-vf deshake selects the stabilization filter
+	output.extension is the resulting file that's different from the input
+*/
+
+
+
+
+Conversion (Ex: mp4 to gif):
+
+ffmpeg -i input.extension -vf scale=320:-1 -t 10 -r 10 output.gif
+
+/*
+	-i input.extension designates the file to convert
+	-t 10 limits output to 10 seconds
+	-r 10 limits frames per second (fps) to 10
+	-vf scale=320 scales the frame width to 320 pixels and autoscales the height to maintain the height/width aspect ratio
+*/
+
+
+
+
+Frame Rotation:
+
+ffmpeg -i input.extension -vf "transpose=1" output.extension
+
+/*
+	-i input.extension designates the file to convert
+	-vf "transpose.." rotates the frame
+		Parameters for transpose:
+			0 = 90 CCW and Vertical Flip (default)
+			1 = 90 CW
+			2 = 90 CCW
+			3 = 90 CW and Vertical Flip
+				CW=Clockwise
+				CCW=Counter Clockwise
+	ouptu.extension is the file that the result is saved as
+*/

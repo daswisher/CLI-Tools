@@ -47,7 +47,7 @@ Here's a list of common commands:
 	"P" <<< paste selection before cursor
 	"ctrl+v" <<< copy block of text
 
-	"esc" <<< escape to view mode
+	"esc" <<< escape to command mode
 	":w" <<< save without exiting
 	":w <file name with file extension>" <<< save file as
 	":w! <file name with file extension>" <<< overwrite current filename
@@ -56,3 +56,34 @@ to new filename
 	":q" <<< quit 
 	":q!" <<< force quit
 	":wq" <<< save and quit
+
+>>>>>Navigating through a file<<<<<
+The majority of navigation is performed in command mode. It's possible to search through a file in vim using / followed by whatever the user is looking for.
+
+/<whatever string is being searched>
+
+Once a match is found, the first match will be indicated by moving the cursor to the beginning of the match. Using "n" will move the cursor to the next match. "N" will go to a match before the current location of the cursor.
+
+In order to go the end of a file, use "G". To go back to the top of the file, use "gg".
+
+To go to a specific line, use the line number followed by "G"
+
+	"/<text to find" <<< Find a specific string of text
+	"gg" <<< Go to top of file
+	"G" <<< Go to bottom of file
+	"<line number>G" <<< Go to a specific number
+
+	"w" <<< Move to start of next word
+	"e" <<< Move to end of current word
+	"b" <<< Move to beginning of current word
+
+	"0" <<< Move to beginning of line
+	"$" <<< Move to end of line
+
+	"%" <<< Move to matching parenthesis or bracket
+
+	>>>Alternative navigation from arrow keys<<<
+	"h" <<< Move cursor one space to the left
+	"j" <<< Move cursor one space down
+	"k" <<< Move cursor one space up
+	"l" <<< Move cursor one space to the right
