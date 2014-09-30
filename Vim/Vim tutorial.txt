@@ -87,3 +87,7 @@ To go to a specific line, use the line number followed by "G"
 	"j" <<< Move cursor one space down
 	"k" <<< Move cursor one space up
 	"l" <<< Move cursor one space to the right
+
+Text editing:
+	">" <<< Move selection to the right
+	"<" <<< Move selection to the left
